@@ -21,7 +21,7 @@ HTML_TEMPLATE = '''
     <title>Upload KPI File</title>
 </head>
 <body>
-    <h2>Upload KPI Excel File</h2>
+    <h2>KPI Bưu cục Liên Chiểu</h2>
     <form action="/process" method="post" enctype="multipart/form-data">
         <input type="file" name="file">
         <br><br>
