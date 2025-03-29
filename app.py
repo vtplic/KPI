@@ -35,7 +35,7 @@ HTML_TEMPLATE = '''
     </form>
     <br>
     {% if img_path %}
-        <h2>Processed KPI Warning Image</h2>
+        <h2>KPI luỹ kế tháng Bưu cục Liên Chiểu</h2>
         <img src="{{ img_path }}" alt="KPI Warning" style="max-width: 30%;">
         <br><br>
         <form action="/download" method="get">
