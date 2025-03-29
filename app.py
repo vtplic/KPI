@@ -18,7 +18,7 @@ HTML_TEMPLATE = '''
 <!doctype html>
 <html>
 <head>
-    <title>Upload KPI File</title>
+    <title>KPI Liên Chiểu</title>
 </head>
 <body>
     <h2>KPI Bưu cục Liên Chiểu</h2>
