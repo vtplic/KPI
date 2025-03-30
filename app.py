@@ -24,9 +24,9 @@ os.makedirs(SECOND_RESULT_FOLDER, exist_ok=True)
 HTML_TEMPLATE = '''
 <!doctype html>
 <html>
-<head><title>Upload KPI File</title></head>
+<head><title>KPT BC Liên Chiểu</title></head>
 <body>
-    <h2>Upload KPI Excel File</h2>
+    <h2>KPI PTC lũy kế Bưu Cục Liên Chiểu</h2>
     <form action="/process" method="post" enctype="multipart/form-data">
         <input type="file" name="file"><br><br>
         <label>Tỷ lệ COD tối thiểu:</label>
@@ -37,7 +37,7 @@ HTML_TEMPLATE = '''
     </form>
     <br>
     {% if img_path %}
-        <h2>Processed KPI Warning Image</h2>
+        <h2>Processed Cảnh báo KPI PTC lũy kế Bưu Cục Liên Chiểu</h2>
         <img src="{{ img_path }}" style="max-width: 30%;"><br><br>
         <form action="/download" method="get">
             <button type="submit">Xuất file Excel</button>
@@ -51,16 +51,16 @@ HTML_TEMPLATE = '''
 SECOND_TEMPLATE = '''
 <!doctype html>
 <html>
-<head><title>Upload Báo cáo chi tiết</title></head>
+<head><title>KPI đúng giờ Bưu cục Liên Chiểut</title></head>
 <body>
-    <h2>Upload file Báo cáo chi tiết phát</h2>
+    <h2>KPI đúng giờ Bưu cục Liên Chiểu</h2>
     <form action="/second/process" method="post" enctype="multipart/form-data">
         <input type="file" name="file"><br><br>
         <input type="submit" value="Upload và xử lý">
     </form>
     <br>
     {% if img_path %}
-        <h2>Kết quả cảnh báo</h2>
+        <h2>Cảnh báo KPI đúng giờ Bưu cục Liên Chiểu</h2>
         <img src="{{ img_path }}" style="max-width: 80%;"><br><br>
         <form action="/second/download" method="get">
             <button type="submit">Tải file Excel kết quả</button>
